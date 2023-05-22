@@ -6,6 +6,6 @@
         U - new files / untracked files
         A - added // ready to be published / pushed
 
-5. git add
+5. git add . (. meaning selecting all files and documents)
 6. git commit -m "message"
 7. git push
