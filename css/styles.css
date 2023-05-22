@@ -1,0 +1,86 @@
+/* External CSS */
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    /* text-decoration: underline; */
+    text-transform: capitalize;
+}
+
+/* pseudo class */
+
+a:hover{
+    color:red;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+a:visited{
+    color: red;
+}
+
+/* ul{
+    list-style-type: none;
+} */
+
+
+/* combined selector */
+/* descendent selector */
+
+.inline{
+    display: inline;
+}
+
+.active-link{
+    color:red;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+nav{
+    display: inline;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.box,
+.child{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.bold.red{
+    color: red;
+}
+
+.box.red{
+    background-color: red;
+}
+
+.parent p{
+    color: red;
+}
+
+/* .child div{
+    color: black;
+} */
+
+/* .child>p{
+    color: black;
+} */
+

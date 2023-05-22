@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* css syntax
+        selector{
+            <css proprerty>: <css-value>;
+        } 
+            selector types
+                - element/ tag selector
+                - #id
+
+        */
+        /* selector  */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            /* margin: top, right, bottom, left */
+            /* width: 700px; */
+            text-align: justify;
+        }
+
+        .text-center-bold{
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        /* DRY - Do not repeat yourself */
+        /* a{
+            color: black;
+            text-decoration: none;
+            text-decoration: underline;
+            text-transform: capitalize;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a class="active-link">Courses</a></li>
+                <li><a href="./current courses/python.html">Python Course</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Mern Courses</h1>
+
+    <hr>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vitae atque, nesciunt deserunt perferendis rem
+        vero veritatis, delectus quod non commodi itaque est, velit id dolorum magni dignissimos? Culpa, suscipit. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Quae labore maxime cumque ratione laudantium id illo culpa?
+        Perferendis at qui veniam obcaecati numquam praesentium, enim aperiam cupiditate sequi neque nostrum.
+    </div>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mouse</td>
+                <td>1</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>2</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="text-center-bold" colspan="3">Grand Total</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr>
+
+    <table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Teacher</td>
+            <td>Duration</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Html</td>
+            <td>ABC</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Css</td>
+            <td>XYZ</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="text-center-bold" colspan="2">Total Duration</td>
+            <td>15</td>
+        </tr>
+    </tfoot>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
