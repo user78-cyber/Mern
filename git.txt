@@ -9,3 +9,5 @@
 5. git add . (. meaning selecting all files and documents)
 6. git commit -m "message"
 7. git push
+
+new git checkout -b auth (for login authorization forms)
