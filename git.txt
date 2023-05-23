@@ -10,4 +10,5 @@
 6. git commit -m "message"
 7. git push
 
-new git checkout -b auth (for login authorization forms)
+8. new git checkout -b auth (for login authorization forms)
+9. git merge auth or any other branch to merge the auth such as login code in to the master any chosen branch.
