@@ -7,16 +7,16 @@
     <title>Document</title>
     <style>
 
+        *{
+            box-sizing: border-box;
+        }
+
         .box{
             border: 1px solid;
             height: 100px;
             width: 50%;
         }
 
-        div{
-            border: 2px solid green;
-        }
-        
         .bold{
             font-weight: bold;
         }
@@ -24,11 +24,67 @@
         .inner-box{
             background-color: teal;
         }
-        
+
+        /* div.second{
+            color: red;
+        } */
+
+        /* body{
+            font-size: 32px;
+        } */
+
+        .wrapper{
+            font-size: 16px;
+        }
+
+        .parent{
+            margin-top: 32px;
+            margin-top: 1em; /* em always fetches the font-size of the parent-element */
+            /* margin-top: 1rem; */ /* rem always fetches the font-size of the html-element */
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            background-color: wheat;
+            padding: 1rem;
+            /* display: none; */
+        }
+
+        .child{
+            padding: 1rem;
+            background-color: teal;
+            height: 50%;
+            width: 50%;
+        }
+
+        .full-height{
+            margin: none;
+            height: 100vh;
+            border: 10px solid black;
+        }
+
+        /* .hidden{
+            display: none;
+        } */
+        .inline{
+            display: inline;
+        }
     </style>
 </head>
 <body>
-    <h1>Measurement Units</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./Courses/mern.html">Courses</a></li>
+                <li><a href="./Courses/current courses/python.html">Python Course</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="hidden">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rerum atque cum ducimus eius obcaecati officia voluptatibus provident est quo consectetur autem, illo fuga ad corrupti reiciendis vel ullam. Corporis.</p>
+
+    <h2>Measurement Units</h2>
         <ul>
             <li class="bold">px</li>
             <li class="bold">em</li>
@@ -37,12 +93,41 @@
             <li class="bold">vh</li>
             <li class="bold">vw</li>
             <li class="bold">inch</li>
-            <li>cm</li>
+            <li class="bold">cm</li>
         </ul>
-    <div class="box unit">
+
+        <div class="parent">
+            <div class="child">
+                first parent first child
+            </div>
+        </div>
+        
+        <div class="parent second">
+            <div class="child">
+                second parent -> child
+            </div>
+        </div>
+
+    <div class="box">
         <div class="inner-box box">
 
         </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="parent">
+            <div class="child">
+                child
+            </div>
+            <div class="child">
+                child
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <div class="full-height">
+        content
     </div>
 </body>
 </html>
